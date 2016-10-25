@@ -1,0 +1,12 @@
+C:\ded\projects\DTGraph1\DTGraph1\bin\Debug\DTGraph1.exe.config
+C:\ded\projects\DTGraph1\DTGraph1\obj\Debug\DTGraph1.csprojResolveAssemblyReference.cache
+C:\ded\projects\DTGraph1\DTGraph1\bin\Debug\DTGraph1.exe
+C:\ded\projects\DTGraph1\DTGraph1\bin\Debug\DTGraph1.pdb
+C:\ded\projects\DTGraph1\DTGraph1\bin\Debug\Neo4jClient.dll
+C:\ded\projects\DTGraph1\DTGraph1\bin\Debug\Neo4jClient.SchemaManager.dll
+C:\ded\projects\DTGraph1\DTGraph1\bin\Debug\Newtonsoft.Json.dll
+C:\ded\projects\DTGraph1\DTGraph1\bin\Debug\Neo4jClient.pdb
+C:\ded\projects\DTGraph1\DTGraph1\bin\Debug\Neo4jClient.xml
+C:\ded\projects\DTGraph1\DTGraph1\bin\Debug\Newtonsoft.Json.xml
+C:\ded\projects\DTGraph1\DTGraph1\obj\Debug\DTGraph1.exe
+C:\ded\projects\DTGraph1\DTGraph1\obj\Debug\DTGraph1.pdb
