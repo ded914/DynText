@@ -22,9 +22,9 @@ namespace DTGraph1 {
 
             //make sure Neo4J engine is running before opening the db
             //and that 'my password' is set by successfully navigating to the Uri
-            //IGraphClient graphClient = new GraphClient(new Uri("http://localhost:7474/db/data"), "neo4j", "Friday11");
+            IGraphClient graphClient = new GraphClient(new Uri("http://localhost:7474/db/data"), "neo4j", "Friday11");
 
-            IGraphClient graphClient = new GraphClient(new Uri("http://hobby-ccenomhijildgbkeelnangol.dbs.graphenedb.com:24789/db/data/"), "DT1", "RMEPyBQljIuJF8bYNrSB");
+            //IGraphClient graphClient = new GraphClient(new Uri("http://hobby-ccenomhijildgbkeelnangol.dbs.graphenedb.com:24789/db/data/"), "DT1", "RMEPyBQljIuJF8bYNrSB");
 
             try {
                 graphClient.Connect();

@@ -5,8 +5,8 @@
 
     using Neo4jClient;
     using Neo4jClient.SchemaManager;
+    using Neo4jClient.Cypher;
 
-  
 
     public class NeoTestHelper
     {
@@ -55,21 +55,26 @@ CREATE
     (GeneralBreaches)-[:HAS_TERM {index:2}]->(SleepDisturbance),
     (GeneralBreaches)-[:HAS_TERM {index:3}]->(Fewer)
 
+CREATE (TestEmptySlot:Slot {name:'Slot with no terms'})
+
 CREATE (AdditionalComplaints:Slot {name:'Additional Complaints'})
 CREATE (FillingsDestroyed:Term {name:'Fillings Destroyed'})
 CREATE (FillingsMoving:Term {name:'Fillings Moving'})
 CREATE (FoodGetsStuckInTheTeeth:Term {name:'Food Gets Stuck In The Teeth'})
+
 CREATE
     (AdditionalComplaints)-[:HAS_TERM {index:0}]->(FillingsDestroyed),
     (AdditionalComplaints)-[:HAS_TERM {index:1}]->(FillingsMoving),
     (AdditionalComplaints)-[:HAS_TERM {index:2}]->(FoodGetsStuckInTheTeeth)
+
 
 CREATE
     (Complaints)-[:LINK_TO_FRAME{index:0}]->(Pain),
     (Complaints)-[:HAS_SLOT{index:1}]->(CosmeticalDefect),
     (Complaints)-[:HAS_SLOT{index:2}]->(DentalCavityPresented),
     (Complaints)-[:HAS_SLOT{index:3}]->(GeneralBreaches),
-    (Complaints)-[:HAS_SLOT{index:4}]->(AdditionalComplaints)
+    (Complaints)-[:HAS_SLOT{index:4}]->(AdditionalComplaints),
+    (Complaints)-[:HAS_SLOT{index:5}]->(TestEmptySlot)
 
 CREATE
     (Stomatology)-[:LINK_TO_FRAME{index:0}]->(Anamnesis),
